@@ -1,0 +1,38 @@
+.new-card {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+       border-top: 1px solid black;
+       border-bottom: 1px solid black;
+    }
+    form {
+        margin: 1vmax 0;
+        padding: 2vmax 1vmax;
+        height: auto;
+        width: 70%;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.14);
+        a {
+            margin: 0 1vmax;
+            padding: .5vmax;
+            border-radius: 20px;
+            transition: all 0.3s;
+            text-decoration: none;
+            &:hover {
+                background-color: rgb(196, 196, 243);
+            }
+        }
+    }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

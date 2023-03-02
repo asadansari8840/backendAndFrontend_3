@@ -1,0 +1,96 @@
+* {
+  // border: 1px solid red;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ant-card-actions {
+  background: rgba(244, 243, 243, 0.395) !important;
+}
+.ant-card {
+  margin: 0.5vmax 0.8vmax;
+  border: 1px solid rgba(155, 155, 155, 0.283);
+  border-radius: 0;
+}
+
+.ant-card-body {
+  padding: 2vmax 1vmax;
+  .ant-card-inner {
+    //   border: 1px solid red;
+    h3 {
+      font-size: 1.1vmax;
+    }
+    .ant-card-content > .ant-lines {
+      padding: 0.2vmax 0;
+      display: flex;
+      align-items: center;
+      p {
+        margin: 0 0.5vmax;
+        color: rgb(113, 111, 111);
+        font-weight: 350;
+      }
+
+      //icons size set
+      span {
+        font-size: 1.2vmax;
+        color: rgba(0, 0, 0, 0.602);
+      }
+    }
+  }
+}
+.isLiked {
+  > svg {
+    height: 22px;
+    width: 25px;
+    background-color: red; 
+    clip-path: path(
+      "M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"
+    );
+  }
+}
+
+.addCard {
+  position: fixed;
+  right: 3%;
+  bottom: 5%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > a > button {
+    border: none;
+    outline: none;
+    background-color: rgba(78, 29, 162, 0.757);
+    border-radius: 50%;
+    padding: 1vmax;
+    svg {
+      color: rgb(255, 250, 251);
+      font-size: 1.5vmax;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home {
+    align-items: center;
+    justify-content: center;
+  }
+  .addCard {
+    a > button {
+      height: 7vmax;
+      width: 7vmax;
+      padding: 0 !important;
+      
+    }
+  }
+}
